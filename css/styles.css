@@ -1,0 +1,30 @@
+body, html {
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: black; 
+    overflow-y: hidden!important;
+    overflow-x: hidden!important;
+}
+
+#video-container {
+    position: relative; /* To position input over video */
+}
+
+#video-input {
+    background-color: black;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure input is above video */
+}
+
+#video-input::placeholder {
+    color: #ccc;
+}
